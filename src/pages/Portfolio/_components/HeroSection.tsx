@@ -1,6 +1,6 @@
 import { usePortfolioStore } from "@/store/portfolioStore";
 import { scrollToSection } from "@/utils/utils";
-import profile from "@/assets/images/profile.png";
+import profile from "@/assets/images/profile-pic.png";
 import type { Experience } from "@/types/Experience";
 import ImageLoader from "@/styles/loader/ImageLoader";
 import SocialLinks from "@/styles/Icons/SocialLinks";
