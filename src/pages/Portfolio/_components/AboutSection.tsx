@@ -11,7 +11,7 @@ const AboutSection = ({ totalExperience }: AboutSectionProps) => {
 	useEffect(() => {
 		const fetchRepoCount = async () => {
 			try {
-				const res = await fetch("https://api.github.com/users/qaiser1Habib");
+				const res = await fetch("https://api.github.com/users/qaisarhabib");
 				const data = await res.json();
 				setRepoCount(data?.public_repos || 0);
 			} catch (error) {
