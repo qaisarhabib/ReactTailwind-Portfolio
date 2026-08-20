@@ -24,56 +24,64 @@ const ExperienceSection = () => {
                 <div className="mt-1">March 2025 - Present</div>
               </div>
             </div>
-            <ul className="text-gray-600 space-y-2">
+            <ul className="text-gray-600 space-y-2 mb-4">
               <li className="flex items-start">
                 <i className="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
-                Build responsive, user-friendly websites ensuring design
-                accuracy and performance
+                Developed production React/Next.js applications with reusable component architecture, API integrations, state management, and performance optimization.
               </li>
               <li className="flex items-start">
                 <i className="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
-                Collaborate with cross-functional teams to deliver high-quality
-                solutions
+                Integrated LLM-powered features into web applications, connecting frontend workflows with AI services and backend APIs.
               </li>
               <li className="flex items-start">
                 <i className="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
-                Write clean, efficient, and maintainable code following best
-                practices
+                Improved frontend performance through code splitting, lazy loading, caching, and render optimization.
               </li>
             </ul>
+            <div className="flex flex-wrap gap-2 pt-2 border-t border-gray-100">
+              {["JavaScript", "TypeScript", "ReactJS", "Next.js", "Tailwind CSS", "AI/LLM", "Git", "CI/CD"].map((t, idx) => (
+                <span key={idx} className="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full font-medium">
+                  {t}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className="bg-white p-8 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
             <div className="flex flex-col md:flex-row justify-between items-start mb-4">
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800">
-                  MERN Stack Developer
+                  MERN Stack Development
                 </h3>
                 <p className="text-blue-600 font-medium">
-                  Single Solution (LAHORE)
+                  Single Solution (Lahore)
                 </p>
               </div>
               <div className="text-gray-500 mt-2 md:mt-0">
                 March 2023 - February 2025
               </div>
             </div>
-            <ul className="text-gray-600 space-y-2">
+            <ul className="text-gray-600 space-y-2 mb-4">
               <li className="flex items-start">
                 <i className="fas fa-check-circle text-blue-500 mr-3 mt-1"></i>
-                Optimized codebase efficiency and scalability resulting in
-                significant performance improvements
+                Developed and optimized scalable full-stack web applications using the MERN stack.
               </li>
               <li className="flex items-start">
                 <i className="fas fa-check-circle text-blue-500 mr-3 mt-1"></i>
-                Enhanced application speed and stability through strategic code
-                optimization
+                Optimized application architecture and codebase efficiency, resulting in improved application speed, stability, and overall user experience.
               </li>
               <li className="flex items-start">
                 <i className="fas fa-check-circle text-blue-500 mr-3 mt-1"></i>
-                Played a pivotal role in full-stack development using MERN
-                technologies
+                Worked on AI-powered features and LLM-based workflows to enhance application functionality and automation.
               </li>
             </ul>
+            <div className="flex flex-wrap gap-2 pt-2 border-t border-gray-100">
+              {["JavaScript", "TypeScript", "ReactJS", "Node.js", "Express.js", "MongoDB", "REST APIs", "GraphQL", "Socket.io", "AI/LLM", "Docker", "Git"].map((t, idx) => (
+                <span key={idx} className="bg-purple-50 text-purple-700 text-xs px-2.5 py-1 rounded-full font-medium">
+                  {t}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className="bg-white p-8 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
@@ -82,29 +90,29 @@ const ExperienceSection = () => {
                 <h3 className="text-2xl font-semibold text-gray-800">
                   Frontend Developer Intern
                 </h3>
-                <p className="text-blue-600 font-medium">SoftRobo (LAHORE)</p>
+                <p className="text-blue-600 font-medium">SoftRobo (Lahore)</p>
               </div>
               <div className="text-gray-500 mt-2 md:mt-0">
                 September 2022 - February 2023
               </div>
             </div>
-            <ul className="text-gray-600 space-y-2">
+            <ul className="text-gray-600 space-y-2 mb-4">
               <li className="flex items-start">
                 <i className="fas fa-check-circle text-purple-500 mr-3 mt-1"></i>
-                Developed responsive and interactive web interfaces using HTML,
-                CSS, and JavaScript
+                Developed responsive and interactive web interfaces using HTML, CSS, and JavaScript.
               </li>
               <li className="flex items-start">
                 <i className="fas fa-check-circle text-purple-500 mr-3 mt-1"></i>
-                Enhanced user experience and accessibility across multiple
-                projects
-              </li>
-              <li className="flex items-start">
-                <i className="fas fa-check-circle text-purple-500 mr-3 mt-1"></i>
-                Gained foundational experience in frontend development best
-                practices
+                Improved user experience and accessibility across web projects.
               </li>
             </ul>
+            <div className="flex flex-wrap gap-2 pt-2 border-t border-gray-100">
+              {["HTML", "CSS", "JavaScript", "Tailwind", "Bootstrap", "ReactJS", "Git"].map((t, idx) => (
+                <span key={idx} className="bg-emerald-50 text-emerald-700 text-xs px-2.5 py-1 rounded-full font-medium">
+                  {t}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>

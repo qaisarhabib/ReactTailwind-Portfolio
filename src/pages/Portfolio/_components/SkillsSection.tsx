@@ -37,36 +37,36 @@ const SkillsSection = () => {
 					<div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
 				</div>
 
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 					{/* Frontend Skills */}
-					<div className="bg-white p-8 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
+					<div className="bg-white p-6 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
 						<div className="text-center mb-6">
-							<i className="fas fa-code text-4xl text-blue-500 mb-4"></i>
+							<i className="fas fa-code text-4xl text-blue-500 mb-3"></i>
 							<h3 className="text-xl font-semibold">Frontend</h3>
 						</div>
 
-						<div className="space-y-4">
+						<div className="space-y-3">
 							{[
-								{ name: "React.js", level: 95 },
-								{ name: "Next.js", level: 85 },
-								{ name: "React Native", level: 75 },
-								{ name: "TypeScript", level: 80 },
-								{ name: "Tailwind CSS", level: 90 },
+								{ name: "React / Next.js", level: 95 },
+								{ name: "TypeScript", level: 90 },
+								{ name: "React Query", level: 88 },
+								{ name: "Redux / Zustand", level: 85 },
+								{ name: "Tailwind CSS", level: 92 },
 							].map((skill, index) => (
 								<div key={skill.name}>
-									<div className="flex justify-between mb-2">
-										<span className="text-sm font-medium">{skill.name}</span>
-										<span className="text-sm text-gray-500">{skill.level}%</span>
+									<div className="flex justify-between mb-1">
+										<span className="text-xs font-medium">{skill.name}</span>
+										<span className="text-xs text-gray-500">{skill.level}%</span>
 									</div>
 
-									<div className="w-full bg-gray-200 rounded-full h-2">
+									<div className="w-full bg-gray-200 rounded-full h-1.5">
 										<div
-											className={`h-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 skill-bar-animate ${
+											className={`h-1.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 skill-bar-animate ${
 												skillsVisible ? "" : "w-0"
 											}`}
 											style={{
 												width: skillsVisible ? `${skill.level}%` : "0%",
-												transitionDelay: `${index * 200}ms`,
+												transitionDelay: `${index * 150}ms`,
 											}}
 										></div>
 									</div>
@@ -75,35 +75,35 @@ const SkillsSection = () => {
 						</div>
 					</div>
 
-					{/* Backend Skills */}
-					<div className="bg-white p-8 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
+					{/* Backend & Databases */}
+					<div className="bg-white p-6 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
 						<div className="text-center mb-6">
-							<i className="fas fa-server text-4xl text-green-500 mb-4"></i>
-							<h3 className="text-xl font-semibold">Backend</h3>
+							<i className="fas fa-server text-4xl text-green-500 mb-3"></i>
+							<h3 className="text-xl font-semibold">Backend & DBs</h3>
 						</div>
 
-						<div className="space-y-4">
+						<div className="space-y-3">
 							{[
-								{ name: "Node.js", level: 90 },
-								{ name: "Express.js", level: 85 },
-								{ name: "Socket.io", level: 75 },
-								{ name: "REST APIs", level: 88 },
+								{ name: "Node.js / Express", level: 90 },
+								{ name: "NestJS", level: 85 },
+								{ name: "REST / GraphQL / SSE", level: 88 },
 								{ name: "MongoDB", level: 85 },
+								{ name: "PostgreSQL / Prisma", level: 82 },
 							].map((skill, index) => (
 								<div key={skill.name}>
-									<div className="flex justify-between mb-2">
-										<span className="text-sm font-medium">{skill.name}</span>
-										<span className="text-sm text-gray-500">{skill.level}%</span>
+									<div className="flex justify-between mb-1">
+										<span className="text-xs font-medium">{skill.name}</span>
+										<span className="text-xs text-gray-500">{skill.level}%</span>
 									</div>
 
-									<div className="w-full bg-gray-200 rounded-full h-2">
+									<div className="w-full bg-gray-200 rounded-full h-1.5">
 										<div
-											className={`h-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 skill-bar-animate ${
+											className={`h-1.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 skill-bar-animate ${
 												skillsVisible ? "" : "w-0"
 											}`}
 											style={{
 												width: skillsVisible ? `${skill.level}%` : "0%",
-												transitionDelay: `${index * 200}ms`,
+												transitionDelay: `${index * 150}ms`,
 											}}
 										></div>
 									</div>
@@ -112,35 +112,72 @@ const SkillsSection = () => {
 						</div>
 					</div>
 
-					{/* DevOps Skills */}
-					<div className="bg-white p-8 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
+					{/* AI & LLM Workflows */}
+					<div className="bg-white p-6 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
 						<div className="text-center mb-6">
-							<i className="fas fa-cloud text-4xl text-purple-500 mb-4"></i>
+							<i className="fas fa-robot text-4xl text-indigo-500 mb-3"></i>
+							<h3 className="text-xl font-semibold">AI & LLM</h3>
+						</div>
+
+						<div className="space-y-3">
+							{[
+								{ name: "LLM APIs & Prompts", level: 90 },
+								{ name: "RAG & Vector Search", level: 85 },
+								{ name: "AI Agents & Tooling", level: 88 },
+								{ name: "Ollama Local LLMs", level: 85 },
+								{ name: "AI Workflows", level: 88 },
+							].map((skill, index) => (
+								<div key={skill.name}>
+									<div className="flex justify-between mb-1">
+										<span className="text-xs font-medium">{skill.name}</span>
+										<span className="text-xs text-gray-500">{skill.level}%</span>
+									</div>
+
+									<div className="w-full bg-gray-200 rounded-full h-1.5">
+										<div
+											className={`h-1.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 skill-bar-animate ${
+												skillsVisible ? "" : "w-0"
+											}`}
+											style={{
+												width: skillsVisible ? `${skill.level}%` : "0%",
+												transitionDelay: `${index * 150}ms`,
+											}}
+										></div>
+									</div>
+								</div>
+							))}
+						</div>
+					</div>
+
+					{/* DevOps & Cloud */}
+					<div className="bg-white p-6 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
+						<div className="text-center mb-6">
+							<i className="fas fa-cloud text-4xl text-purple-500 mb-3"></i>
 							<h3 className="text-xl font-semibold">DevOps & Cloud</h3>
 						</div>
 
-						<div className="space-y-4">
+						<div className="space-y-3">
 							{[
-								{ name: "CI/CD (GitHub Actions)", level: 75 },
-								{ name: "Docker", level: 70 },
-								{ name: "Kubernetes (K8s)", level: 60 },
-								{ name: "AWS", level: 70 },
-								{ name: "Git/GitHub", level: 85 },
+								{ name: "Docker", level: 82 },
+								{ name: "Kubernetes (K8s)", level: 70 },
+								{ name: "CI/CD & GitHub Actions", level: 80 },
+								{ name: "AWS & Cloud Services", level: 75 },
+								{ name: "Git / Linux Tools", level: 90 },
 							].map((skill, index) => (
 								<div key={skill.name}>
-									<div className="flex justify-between mb-2">
-										<span className="text-sm font-medium">{skill.name}</span>
-										<span className="text-sm text-gray-500">{skill.level}%</span>
+									<div className="flex justify-between mb-1">
+										<span className="text-xs font-medium">{skill.name}</span>
+										<span className="text-xs text-gray-500">{skill.level}%</span>
 									</div>
 
-									<div className="w-full bg-gray-200 rounded-full h-2">
+									<div className="w-full bg-gray-200 rounded-full h-1.5">
 										<div
-											className={`h-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 skill-bar-animate ${
+											className={`h-1.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 skill-bar-animate ${
 												skillsVisible ? "" : "w-0"
 											}`}
 											style={{
 												width: skillsVisible ? `${skill.level}%` : "0%",
-												transitionDelay: `${index * 200}ms`,
+												transitionDelay: `${index * 150}ms`,
 											}}
 										></div>
 									</div>

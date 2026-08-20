@@ -19,11 +19,13 @@ It showcases my background, skills, work experience, and featured projects as a 
 - **About Me** – Education and background.  
 - **Experience** – Work history including Focus IT Services, Single Solution, and SoftRobo.  
 - **Projects** – Featured projects:
-  - [Pic.Fan](https://pic.fan) – Full-stack social platform with real-time messaging.  
+  - Multi-Tenant AI Customer Support Platform – NestJS, Next.js, Prisma, Ollama, SSE real-time dashboard.
+  - Human Resource Management System – Web-based HR platform for records, attendance, payroll, and admin workflows.
   - [UndrRight](https://www.undrright.com) – AI-powered legal assistant web app.  
   - [En Route AI](https://enroute2.com) – AI travel chatbot with OpenAI.  
-- **Skills** – Frontend, backend, and DevOps tools with progress indicators.  
-- **Contact** – Email, phone, LinkedIn, and form submission.
+  - [Pic.Fan](https://pic.fan) – Full-stack social platform with real-time messaging.  
+- **Skills** – Frontend, Backend & DBs, AI & LLM Workflows, and DevOps & Cloud tools.
+- **Contact** – Email, phone, LinkedIn, WhatsApp, and form submission.
 
 ## 🛠️ Tech Stack
 
