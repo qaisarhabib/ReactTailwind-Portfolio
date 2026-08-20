@@ -1,21 +1,67 @@
 export const projects = [
 	{
-		title: "UndrRight",
-		description: "AI-powered legal assistant web application for lawyers",
-		gradient: "from-purple-400 to-pink-500",
+		title: "Multi-Tenant AI Customer Support Platform",
+		description: "Scalable AI customer support platform with NestJS, Next.js, Prisma, and Ollama.",
+		gradient: "from-blue-600 to-indigo-600",
+		icon: "fas fa-headset",
+		tech: [
+			{ name: "NestJS", color: "bg-red-100 text-red-800" },
+			{ name: "Next.js", color: "bg-slate-100 text-slate-800" },
+			{ name: "Prisma", color: "bg-blue-100 text-blue-800" },
+			{ name: "Ollama", color: "bg-purple-100 text-purple-800" },
+			{ name: "React Query", color: "bg-orange-100 text-orange-800" },
+			{ name: "SSE", color: "bg-emerald-100 text-emerald-800" },
+			{ name: "Docker", color: "bg-sky-100 text-sky-800" },
+		],
+		features: [
+			"AI-powered chat & tool-based orchestration",
+			"Human-agent handoff & real-time SSE dashboard",
+			"Embeddable ES5 chat widget with tenant branding",
+		],
+		link: "https://github.com/qaisarhabib",
+	},
+	{
+		title: "Human Resource Management System",
+		description: "Web-based HR management platform for employee records, attendance, leave, and payroll.",
+		gradient: "from-emerald-500 to-teal-600",
+		icon: "fas fa-users-gear",
+		tech: [
+			{ name: "React.js", color: "bg-green-100 text-green-800" },
+			{ name: "Node.js", color: "bg-blue-100 text-blue-800" },
+			{ name: "Express.js", color: "bg-gray-100 text-gray-800" },
+			{ name: "MongoDB", color: "bg-emerald-100 text-emerald-800" },
+			{ name: "REST APIs", color: "bg-cyan-100 text-cyan-800" },
+		],
+		features: [
+			"Role-based access control & administrative workflows",
+			"Attendance & leave management automation",
+			"Responsive employee and administrative dashboards",
+		],
+		link: "https://github.com/qaisarhabib",
+	},
+	{
+		title: "UndrRight — AI-Powered Legal Assistant",
+		description: "AI-powered web application for legal professionals with intelligent workflows.",
+		gradient: "from-purple-500 to-pink-600",
 		icon: "fas fa-gavel",
 		tech: [
 			{ name: "Node.js", color: "bg-blue-100 text-blue-800" },
 			{ name: "React.js", color: "bg-green-100 text-green-800" },
 			{ name: "Tailwind", color: "bg-cyan-100 text-cyan-800" },
+			{ name: "Framer Motion", color: "bg-pink-100 text-pink-800" },
+			{ name: "Redux Toolkit", color: "bg-purple-100 text-purple-800" },
 			{ name: "MongoDB", color: "bg-gray-100 text-gray-800" },
 		],
-		features: ["AI-powered legal assistance", "Modern UI with Tailwind CSS", "Smooth animations with Framer Motion"],
+		features: [
+			"AI-powered legal assistance & workflow automation",
+			"Modern UI with Tailwind CSS & Framer Motion",
+			"Centralized state management & scalable backend",
+		],
 		link: "https://www.undrright.com/",
 	},
 	{
 		title: "En Route AI Travel Chatbot",
-		description: "AI-powered travel planning chatbot with OpenAI integration",
+		description: "AI-powered travel planning chatbot with OpenAI integration.",
 		gradient: "from-green-400 to-blue-500",
 		icon: "fas fa-plane",
 		tech: [
@@ -29,7 +75,7 @@ export const projects = [
 	},
 	{
 		title: "Pic.Fan",
-		description: "Full-stack social platform with real-time messaging capabilities",
+		description: "Full-stack social platform with real-time messaging capabilities.",
 		gradient: "from-blue-400 to-purple-500",
 		icon: "fas fa-images",
 		tech: [

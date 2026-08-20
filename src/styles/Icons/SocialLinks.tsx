@@ -16,7 +16,7 @@ const SocialLinks = ({ className }: { className: string }) => {
         <i className="fa-brands fa-github"></i>
       </a>
       <a
-        href="https://www.linkedin.com/in/qaisar-habib-827075203/"
+        href="https://www.linkedin.com/in/qaisarhabib/"
         target="_blank"
         className="text-2xl hover:text-blue-400 hover:scale-110 transition-transform"
       >

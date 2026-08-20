@@ -66,21 +66,51 @@ const AboutSection = ({ totalExperience }: AboutSectionProps) => {
 						</div>
 					</div>
 
-					<div className="bg-gray-50 p-8 rounded-xl">
-						<h4 className="text-xl font-semibold mb-6">Education</h4>
+					<div className="space-y-6">
+						<div className="bg-gray-50 p-8 rounded-xl">
+							<h4 className="text-xl font-semibold mb-6 flex items-center gap-2">
+								<i className="fas fa-graduation-cap text-blue-500"></i> Education
+							</h4>
 
-						<div className="space-y-4">
-							<div className="border-l-4 border-blue-500 pl-4">
-								<h5 className="font-semibold">Bachelor of Software Engineering</h5>
-								<p className="text-gray-600">Minhaj University Lahore</p>
-								<p className="text-sm text-gray-500">2017 - 2021</p>
-							</div>
+							<div className="space-y-4">
+								<div className="border-l-4 border-blue-500 pl-4">
+									<h5 className="font-semibold">Bachelor of Software Engineering</h5>
+									<p className="text-gray-600">Minhaj University Lahore</p>
+									<p className="text-sm text-gray-500">2017 - 2021</p>
+									<p className="text-xs text-gray-500 mt-1">
+										OOP, Data Structures & Algorithms, Software Engineering, Web Dev, OS, AI
+									</p>
+								</div>
 
-							<div className="border-l-4 border-purple-500 pl-4">
-								<h5 className="font-semibold">Intermediate</h5>
-								<p className="text-gray-600">Islamia College Karachi</p>
-								<p className="text-sm text-gray-500">2015 - 2017</p>
+								<div className="border-l-4 border-purple-500 pl-4">
+									<h5 className="font-semibold">Intermediate</h5>
+									<p className="text-gray-600">Islamia College Karachi</p>
+									<p className="text-sm text-gray-500">2015 - 2017</p>
+								</div>
 							</div>
+						</div>
+
+						<div className="bg-gray-50 p-8 rounded-xl">
+							<h4 className="text-xl font-semibold mb-4 flex items-center gap-2">
+								<i className="fas fa-certificate text-purple-500"></i> Certificates & Awards
+							</h4>
+
+							<ul className="space-y-3 text-sm text-gray-700">
+								<li className="flex items-start gap-2">
+									<i className="fas fa-award text-yellow-500 mt-1"></i>
+									<div>
+										<strong className="text-gray-800">Full-Stack Web Development Bootcamp</strong>
+										<p className="text-gray-500 text-xs">Udemy Certificate of Completion — 2022</p>
+									</div>
+								</li>
+								<li className="flex items-start gap-2">
+									<i className="fas fa-award text-yellow-500 mt-1"></i>
+									<div>
+										<strong className="text-gray-800">Mastering Data Structures & Algorithms C/C++</strong>
+										<p className="text-gray-500 text-xs">Udemy Certificate of Completion — 2021</p>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>

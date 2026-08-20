@@ -23,10 +23,9 @@ const HeroSection = ({ totalExperience }: HeroSectionProps) => {
 					</div>
 				</div>
 				<h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-4">QAISER HABIB</h1>
-				<div className="text-xl md:text-2xl mb-6">MERN Stack Developer</div>
+				<div className="text-xl md:text-2xl mb-6 text-blue-100">Full-Stack Developer | AI & MERN Specialist</div>
 				<p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-					MERN Stack Developer with {`${totalExperience.years}${totalExperience.months > 0 ? "+" : ""}`} years of experience.
-					Turning illustration into working prototype using React.js Node.js
+					Experienced Developer with {`${totalExperience.years}${totalExperience.months > 0 ? "+" : ""}`} years of expertise building production React/Next.js applications, scalable APIs, and LLM-powered AI workflows.
 				</p>
 				<div className="flex flex-col sm:flex-row gap-4 justify-center">
 					<button
