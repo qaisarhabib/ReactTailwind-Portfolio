@@ -1,3 +1,37 @@
-const groups = [{ title: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "React Query", "Zustand"] }, { title: "Backend", items: ["Node.js", "Express", "NestJS", "REST APIs", "GraphQL", "PostgreSQL"] }, { title: "AI & Data", items: ["LLM APIs", "RAG", "AI Agents", "Ollama", "MongoDB", "Prisma"] }, { title: "Delivery", items: ["Docker", "Kubernetes", "GitHub Actions", "AWS", "Git", "Linux"] }];
-const SkillsSection = () => <section id="skills" className="bg-zinc-950 py-24 text-white sm:py-32"><div className="mx-auto max-w-7xl px-5 sm:px-8"><p className="eyebrow mb-4 text-zinc-400">04 / Toolbox</p><div className="mb-14 flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><h2 className="max-w-xl text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">Technology in service of the product.</h2><p className="max-w-xs text-sm leading-6 text-zinc-400">A practical, evolving toolkit for creating useful experiences end-to-end.</p></div><div className="grid border-l border-t border-zinc-800 sm:grid-cols-2 lg:grid-cols-4">{groups.map((group, index) => <div key={group.title} className="min-h-56 border-b border-r border-zinc-800 p-6"><p className="font-mono text-xs text-lime-300">0{index + 1}</p><h3 className="mt-8 text-xl font-extrabold">{group.title}</h3><div className="mt-5 flex flex-wrap gap-2">{group.items.map((item) => <span key={item} className="rounded-full bg-white/8 px-3 py-1.5 text-xs font-semibold text-zinc-300">{item}</span>)}</div></div>)}</div></div></section>;
+const groups = [
+	{ title: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "React Query", "Zustand"] },
+	{ title: "Backend", items: ["Node.js", "Express", "NestJS", "REST APIs", "GraphQL", "PostgreSQL"] },
+	{ title: "AI & Data", items: ["LLM APIs", "RAG", "AI Agents", "Ollama", "MongoDB", "Prisma"] },
+	{ title: "Delivery", items: ["Docker", "Kubernetes", "GitHub Actions", "AWS", "Git", "Linux"] },
+];
+const SkillsSection = () => (
+	<section id="skills" className="bg-zinc-950 py-24 text-white sm:py-32">
+		<div className="mx-auto max-w-7xl px-5 sm:px-8">
+			<p className="eyebrow mb-4 text-zinc-400">04 / Toolbox</p>
+			<div className="mb-14 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+				<h2 className="max-w-xl text-4xl font-extrabold tracking-[-0.055em] sm:text-5xl">
+					Technology in service of the product.
+				</h2>
+				<p className="max-w-xs text-sm leading-6 text-zinc-400">
+					A practical, evolving toolkit for creating useful experiences end-to-end.
+				</p>
+			</div>
+			<div className="grid border-l border-t border-zinc-800 sm:grid-cols-2 lg:grid-cols-4">
+				{groups.map((group, index) => (
+					<div key={group.title} className="min-h-56 border-b border-r border-zinc-800 p-6">
+						<p className="font-mono text-xs text-lime-300">0{index + 1}</p>
+						<h3 className="mt-8 text-xl font-extrabold">{group.title}</h3>
+						<div className="mt-5 flex flex-wrap gap-2">
+							{group.items.map((item) => (
+								<span key={item} className="rounded-full bg-white/8 px-3 py-1.5 text-xs font-semibold text-zinc-300">
+									{item}
+								</span>
+							))}
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+);
 export default SkillsSection;

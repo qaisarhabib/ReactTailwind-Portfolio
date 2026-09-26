@@ -1,7 +1,79 @@
 const roles = [
-  { dates: "Mar 2025 — Present", role: "Frontend Developer", company: "Focus IT Services · Islamabad", bullets: ["Build production React and Next.js applications with reusable component systems and API integrations.", "Ship LLM-powered features by connecting useful AI workflows to reliable frontend experiences.", "Improve performance with focused rendering, caching, lazy loading, and code-splitting work."], tags: ["React", "Next.js", "TypeScript", "AI / LLM", "CI/CD"] },
-  { dates: "Mar 2023 — Feb 2025", role: "MERN Stack Developer", company: "Single Solution · Lahore", bullets: ["Developed scalable full-stack products across React, Node.js, Express, and MongoDB.", "Improved application architecture, stability, speed, and overall product experience.", "Contributed to AI-assisted features and automation-oriented workflows."], tags: ["React", "Node.js", "MongoDB", "GraphQL", "Docker"] },
-  { dates: "Sep 2022 — Feb 2023", role: "Frontend Developer Intern", company: "SoftRobo · Lahore", bullets: ["Created responsive, interactive web interfaces using HTML, CSS, and JavaScript.", "Improved usability and accessibility across web projects."], tags: ["JavaScript", "Tailwind", "Bootstrap", "Git"] }
+	{
+		dates: "Mar 2025 — Present",
+		role: "Frontend Developer",
+		company: "Focus IT Services · Islamabad",
+		bullets: [
+			"Build production React and Next.js applications with reusable component systems and API integrations.",
+			"Ship LLM-powered features by connecting useful AI workflows to reliable frontend experiences.",
+			"Improve performance with focused rendering, caching, lazy loading, and code-splitting work.",
+		],
+		tags: ["React", "Next.js", "TypeScript", "AI / LLM", "CI/CD"],
+	},
+	{
+		dates: "Mar 2023 — Feb 2025",
+		role: "MERN Stack Developer",
+		company: "Single Solution · Lahore",
+		bullets: [
+			"Developed scalable full-stack products across React, Node.js, Express, and MongoDB.",
+			"Improved application architecture, stability, speed, and overall product experience.",
+			"Contributed to AI-assisted features and automation-oriented workflows.",
+		],
+		tags: ["React", "Node.js", "MongoDB", "GraphQL", "Docker"],
+	},
+	{
+		dates: "Sep 2022 — Feb 2023",
+		role: "Frontend Developer Intern",
+		company: "SoftRobo · Lahore",
+		bullets: [
+			"Created responsive, interactive web interfaces using HTML, CSS, and JavaScript.",
+			"Improved usability and accessibility across web projects.",
+		],
+		tags: ["JavaScript", "Tailwind", "Bootstrap", "Git"],
+	},
 ];
-const ExperienceSection = () => <section id="experience" className="border-b border-zinc-200 py-24 dark:border-zinc-800 sm:py-32"><div className="mx-auto max-w-7xl px-5 sm:px-8"><div className="mb-14 flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><div><p className="eyebrow mb-4">02 / Experience</p><h2 className="section-title">Built in the real world.</h2></div><p className="max-w-xs text-sm leading-6 text-zinc-500 dark:text-zinc-400">A track record of taking ownership from interface details to dependable application foundations.</p></div><div className="border-t border-zinc-300 dark:border-zinc-700">{roles.map((job) => <article key={job.company} className="grid gap-5 border-b border-zinc-300 py-8 transition dark:border-zinc-700 sm:grid-cols-[150px_1fr] lg:grid-cols-[200px_1fr_230px] lg:gap-10"><p className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{job.dates}</p><div><h3 className="text-xl font-extrabold tracking-tight">{job.role}</h3><p className="mt-1 text-sm font-bold text-lime-700 dark:text-lime-300">{job.company}</p><ul className="mt-5 space-y-3 text-sm leading-6 text-zinc-600 dark:text-zinc-300">{job.bullets.map((bullet) => <li key={bullet} className="flex gap-3"><span className="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-900 dark:bg-lime-300" />{bullet}</li>)}</ul></div><div className="flex flex-wrap content-start gap-2">{job.tags.map((tag) => <span className="chip" key={tag}>{tag}</span>)}</div></article>)}</div></div></section>;
+const ExperienceSection = () => (
+	<section id="experience" className="border-b border-zinc-200 py-24 dark:border-zinc-800 sm:py-32">
+		<div className="mx-auto max-w-7xl px-5 sm:px-8">
+			<div className="mb-14 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+				<div>
+					<p className="eyebrow mb-4">02 / Experience</p>
+					<h2 className="section-title">Built in the real world.</h2>
+				</div>
+				<p className="max-w-xs text-sm leading-6 text-zinc-500 dark:text-zinc-400">
+					A track record of taking ownership from interface details to dependable application foundations.
+				</p>
+			</div>
+			<div className="border-t border-zinc-300 dark:border-zinc-700">
+				{roles.map((job) => (
+					<article
+						key={job.company}
+						className="grid gap-5 border-b border-zinc-300 py-8 transition dark:border-zinc-700 sm:grid-cols-[150px_1fr] lg:grid-cols-[200px_1fr_230px] lg:gap-10"
+					>
+						<p className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{job.dates}</p>
+						<div>
+							<h3 className="text-xl font-extrabold tracking-tight">{job.role}</h3>
+							<p className="mt-1 text-sm font-bold text-lime-700 dark:text-lime-300">{job.company}</p>
+							<ul className="mt-5 space-y-3 text-sm leading-6 text-zinc-600 dark:text-zinc-300">
+								{job.bullets.map((bullet) => (
+									<li key={bullet} className="flex gap-3">
+										<span className="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-900 dark:bg-lime-300" />
+										{bullet}
+									</li>
+								))}
+							</ul>
+						</div>
+						<div className="flex flex-wrap content-start gap-2">
+							{job.tags.map((tag) => (
+								<span className="chip" key={tag}>
+									{tag}
+								</span>
+							))}
+						</div>
+					</article>
+				))}
+			</div>
+		</div>
+	</section>
+);
 export default ExperienceSection;

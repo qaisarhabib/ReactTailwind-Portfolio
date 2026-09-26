@@ -1,4 +1,28 @@
 import { projects } from "@/data/projects";
 import ProjectCard from "@/styles/cards/ProjectCard";
-const ProjectSection = () => <section id="projects" className="border-b border-zinc-200 bg-white py-24 dark:border-zinc-800 dark:bg-[#181817] sm:py-32"><div className="mx-auto max-w-7xl px-5 sm:px-8"><div className="mb-14 flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><div><p className="eyebrow mb-4">03 / Selected work</p><h2 className="section-title">Ideas made tangible.</h2></div><a href="https://github.com/qaisarhabib" target="_blank" rel="noreferrer" className="text-sm font-extrabold underline decoration-lime-400 decoration-2 underline-offset-4 dark:hover:text-lime-300">See GitHub <span className="ml-1">↗</span></a></div><div className="grid gap-5 md:grid-cols-2">{projects.map((project) => <ProjectCard project={project} key={project.title} />)}</div></div></section>;
+const ProjectSection = () => (
+	<section id="projects" className="border-b border-zinc-200 bg-white py-24 dark:border-zinc-800 dark:bg-[#181817] sm:py-32">
+		<div className="mx-auto max-w-7xl px-5 sm:px-8">
+			<div className="mb-14 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+				<div>
+					<p className="eyebrow mb-4">03 / Selected work</p>
+					<h2 className="section-title">Ideas made tangible.</h2>
+				</div>
+				<a
+					href="https://github.com/qaisarhabib"
+					target="_blank"
+					rel="noreferrer"
+					className="text-sm font-extrabold underline decoration-lime-400 decoration-2 underline-offset-4 dark:hover:text-lime-300"
+				>
+					See GitHub <span className="ml-1">↗</span>
+				</a>
+			</div>
+			<div className="grid gap-5 md:grid-cols-2">
+				{projects.map((project) => (
+					<ProjectCard project={project} key={project.title} />
+				))}
+			</div>
+		</div>
+	</section>
+);
 export default ProjectSection;

@@ -32,7 +32,7 @@ const ContactSection = () => {
 					subject: data.subject,
 					message: data.message,
 				},
-				import.meta.env.VITE_PUBLIC_KEY // EMAILJS PUBLIC_KEY
+				import.meta.env.VITE_PUBLIC_KEY, // EMAILJS PUBLIC_KEY
 			);
 			notify("success", "Message sent successfully!");
 			reset();
