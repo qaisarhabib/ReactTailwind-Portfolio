@@ -1,22 +1,4 @@
 import { projects } from "@/data/projects";
 import ProjectCard from "@/styles/cards/ProjectCard";
-
-const ProjectSection = () => {
-  return (
-    <section id="projects" className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" />
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <ProjectCard project={project} key={index} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
+const ProjectSection = () => <section id="projects" className="border-b border-zinc-200 bg-white py-24 dark:border-zinc-800 dark:bg-[#181817] sm:py-32"><div className="mx-auto max-w-7xl px-5 sm:px-8"><div className="mb-14 flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><div><p className="eyebrow mb-4">03 / Selected work</p><h2 className="section-title">Ideas made tangible.</h2></div><a href="https://github.com/qaisarhabib" target="_blank" rel="noreferrer" className="text-sm font-extrabold underline decoration-lime-400 decoration-2 underline-offset-4 dark:hover:text-lime-300">See GitHub <span className="ml-1">↗</span></a></div><div className="grid gap-5 md:grid-cols-2">{projects.map((project) => <ProjectCard project={project} key={project.title} />)}</div></div></section>;
 export default ProjectSection;
