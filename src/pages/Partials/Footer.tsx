@@ -1,31 +1,3 @@
 import SocialLinks from "@/styles/Icons/SocialLinks";
-
-const Footer = () => {
-  const date = new Date();
-  const year = date.getFullYear();
-  const currentYear = year.toString();
-  return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center">
-          <div className="text-3xl font-bold gradient-bg bg-clip-text text-transparent mb-4">
-            QH
-          </div>
-          <p className="text-gray-400 mb-6">
-            MERN Stack Developer passionate about creating amazing web
-            experiences
-          </p>
-          <SocialLinks className="mb-8" />
-          <div className="border-t border-gray-800 pt-8">
-            <p className="text-gray-400">
-              © {currentYear} Qaiser Habib. All rights reserved. Built with
-              passion and modern web technologies.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-};
-
+const Footer = () => <footer id="contact" className="bg-[#b8f561] py-20 text-zinc-950 dark:bg-[#23291d] dark:text-zinc-50"><div className="mx-auto max-w-7xl px-5 sm:px-8"><p className="eyebrow mb-5 text-zinc-700 dark:text-lime-300">05 / Contact</p><div className="flex flex-col justify-between gap-10 border-b border-zinc-950/25 pb-14 dark:border-lime-300/25 lg:flex-row lg:items-end"><div><h2 className="max-w-3xl text-5xl font-extrabold leading-[.95] tracking-[-0.065em] sm:text-7xl">Let&apos;s make something useful.</h2><p className="mt-6 max-w-lg text-base leading-7 text-zinc-800 dark:text-zinc-300">Have a project, role, or problem worth solving? I&apos;d love to hear about it.</p></div><a href="mailto:qaiserhabib6@gmail.com" className="inline-flex w-fit items-center gap-3 rounded-full bg-zinc-950 px-6 py-4 text-sm font-bold text-white transition hover:scale-[1.02] dark:bg-lime-300 dark:text-zinc-950">Start a conversation <span className="text-lime-300 dark:text-zinc-950">↗</span></a></div><div className="flex flex-col justify-between gap-8 pt-8 sm:flex-row sm:items-center"><div><p className="font-extrabold">Qaiser Habib</p><p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Full-stack developer · Islamabad, Pakistan</p></div><SocialLinks className="text-zinc-950 dark:text-zinc-50" /></div></div></footer>;
 export default Footer;
